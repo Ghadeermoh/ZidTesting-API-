@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Test university testing">
+       <listeners>
+		<listener class-name="Listeners.ExtentReport" />
+		<listener class-name="Listeners.ScreenShotListener"/>
+		<listener class-name="Listeners.RetryListener"/>
+	 </listeners>
+	<test name="Automation Test university Test Cases">
+	<parameter name = "SelectOption"  value ="Option 2"/>
+	
+		<classes>
+		<class name ="pageTests.DropdownPageTest"></class>
+			<class name="pageTests.HomePageTest"></class>
+			
+		</classes>
+		
+	</test>
+</suite>

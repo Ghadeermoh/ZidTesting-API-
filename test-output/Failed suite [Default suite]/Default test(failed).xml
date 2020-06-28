@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="ghadeer" name="pageTests.DropdownPageTest" tests="1" failures="0" timestamp="28 Jun 2020 16:07:55 GMT" time="26.184" errors="0">
+  <testcase name="@BeforeMethod Setup" time="0.0" classname="pageTests.DropdownPageTest">
+    <failure type="java.lang.NullPointerException">
+      <![CDATA[java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at pagesInfo.HomePage.OpenDropdownPage(HomePage.java:20)
+	at pageTests.DropdownPageTest.Setup(DropdownPageTest.java:25)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="VerifyPageLabel" time="0.008" classname="pageTests.DropdownPageTest">
+    <skipped/>
+  </testcase>
+</testsuite>
