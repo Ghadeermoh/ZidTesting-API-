@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="ghadeer" name="pageTests.DropdownPageTest" tests="2" failures="0" timestamp="28 Jun 2020 16:44:55 GMT" time="33.266" errors="0">
-  <testcase name="SelectOptionDropdownBtn" time="0.011" classname="pageTests.DropdownPageTest">
-    <skipped/>
-  </testcase>
-  <testcase name="VerifyPageLabel" time="0.161" classname="pageTests.DropdownPageTest"/>
+<testsuite hostname="ghadeer" name="pageTests.BrokenImgsTest" tests="1" failures="0" timestamp="29 Jun 2020 18:03:42 GMT" time="44.153" errors="0">
+  <testcase name="CheckImgsBroken" time="0.295" classname="pageTests.BrokenImgsTest"/>
 </testsuite>
