@@ -32,11 +32,11 @@ public class HomePageTest extends BaseClass{
 		Assert.assertEquals(" Internet",HomeTitle);
 	}
 	
-//	@Test 
-//	public void TestDrobdownLink() {
-//		home_page=new HomePage();
-//		dropdown_page=home_page.OpenDropdownPage();	
-//	}
+	@Test 
+	public void TestDrobdownLink() {
+		home_page=new HomePage();
+		dropdown_page=home_page.OpenDropdownPage();	
+	}
 	
 	@AfterMethod
 	public void quit() {

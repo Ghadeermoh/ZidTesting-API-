@@ -15,7 +15,7 @@ public class ScreenShotFailedTest extends BaseClass{
 	public static void  When_fail() {
 		File scrfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(scrfile, new File("C:\\Users\\ghadeermoh\\eclipse-workspace\\TestAutomationUniveristy\\ScreenShot\\ScreenShot.png"));   //we shold add png
+			FileUtils.copyFile(scrfile, new File(UtilClass.screenShot_path));   //we shold add png
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

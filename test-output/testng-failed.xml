@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)" preserve-order="false">
+<suite name="Failed suite [Automation Test university testing]">
+  <parameter name="SelectOption" value="Option 2"/>
+  <listeners>
+    <listener class-name="Listeners.ExtentReport"/>
+    <listener class-name="Listeners.ScreenShotListener"/>
+    <listener class-name="Listeners.RetryListener"/>
+  </listeners>
+  <test name="Automation Test university Test Cases(failed)" preserve-order="false">
+    <parameter name="SelectOption" value="Option 2"/>
     <classes>
-      <class name="pageTests.UploadFileTest">
+      <class name="pageTests.HomePageTest">
         <methods>
-          <include name="uploadFile"/>
+          <include name="quit"/>
           <include name="Setup"/>
+          <include name="TestHome"/>
         </methods>
       </class>
     </classes>

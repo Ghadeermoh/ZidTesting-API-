@@ -3,10 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)" preserve-order="false">
     <classes>
-      <class name="pageTests.UploadFileTest">
+      <class name="pageTests.HomePageTest">
         <methods>
-          <include name="uploadFile"/>
+          <include name="quit"/>
           <include name="Setup"/>
+          <include name="TestHome"/>
         </methods>
       </class>
     </classes>

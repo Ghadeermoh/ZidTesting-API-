@@ -10,8 +10,11 @@
 	<parameter name = "SelectOption"  value ="Option 2"/>
 	
 		<classes>
-		<class name ="pageTests.DropdownPageTest"></class>
+		    
 			<class name="pageTests.HomePageTest"></class>
+			<class name ="pageTests.DropdownPageTest"></class>
+			<class name="pageTests.UploadFileTest"></class>
+			<class name="pageTests.BrokenImgsTest"></class>
 			
 		</classes>
 		

@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import utility.UtilClass;
+
 public class BaseClass {
 	public static WebDriver driver;
 	public static Properties prop;
@@ -18,7 +20,7 @@ public class BaseClass {
 		prop=new Properties() ;
 			FileInputStream IN;
 			try {
-				IN = new FileInputStream("C:\\Users\\ghadeermoh\\eclipse-workspace\\TestAutomationUniveristy\\src\\main\\java\\environment\\config.properties"); //config data file path
+				IN = new FileInputStream(UtilClass.config_path); //config data file path
 				prop.load(IN);
 			}catch (FileNotFoundException e) {
 				e.printStackTrace();
@@ -31,16 +33,16 @@ public class BaseClass {
 	public void init() {
 		String browsername=prop.getProperty("browser");
 		if (browsername.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:\\program file\\selenium programs\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", UtilClass.chrome_path);
 			driver =new ChromeDriver();
 		}
 		else if (browsername.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver","D:\\program file\\selenium programs\\geckodriver.exe");  //give location of the driver we already downloaded 
+			System.setProperty("webdriver.gecko.driver",UtilClass.firefox_path);  //give location of the driver we already downloaded 
 			driver =new FirefoxDriver();
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(70,TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(UtilClass.page_load,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(UtilClass.implicit_wait,TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 		
 	}
